@@ -17,9 +17,9 @@ function formatTime(totalSeconds) {
 }
 
 const DURATIONS = {
-    focus: 4,
-    short: 2,
-    long: 3,
+    focus: 25*60,
+    short: 5*60,
+    long: 15*60,
 };
 
 // 🌱 büyüme görseli
