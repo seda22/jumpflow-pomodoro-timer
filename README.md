@@ -1,16 +1,75 @@
-# React + Vite
+# 🌱 Focus Garden Timer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimalist productivity timer built with **React** that visualizes focus sessions as a growing digital garden.
 
-Currently, two official plugins are available:
+This project combines **time-boxing (Pomodoro logic)** with a small visual reward system to encourage consistency and sustained attention.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⏱ **Focus / Short Break / Long Break cycle**
+- 🔁 **Automatic session switching** (every 4 focus sessions → long break)
+- 🌿 **Visual growth system** that evolves after each completed focus session
+- 🎯 **Real-time circular progress indicator** (SVG animation)
+- ⏯ **Start / Pause / Reset controls**
+- 📱 Clean, centered layout designed for distraction-free usage
+- 🎨 Soft UI styling with subtle motion feedback
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- **React (Hooks)** → `useState`, `useEffect` for timer lifecycle  
+- **Reactstrap / Bootstrap** → layout and component structure  
+- **Custom CSS** → UI styling, motion, and micro-interactions  
+- **SVG** → animated circular progress indicator  
+- **JavaScript Timing APIs** → controlled interval management  
+
+---
+
+## 🧠 What I Practiced
+
+This project focuses on **state-driven UI behavior** rather than static rendering.
+
+Key implementation topics:
+
+- Managing timer lifecycle with `useEffect`
+- Preventing interval duplication and ensuring cleanup
+- Deriving UI state from time progression
+- Handling controlled mode transitions *(focus → break → focus)*
+- Building animated progress using `strokeDashoffset`
+- Designing small feedback loops to reinforce user behavior
+- Structuring logic to avoid unnecessary re-renders
+
+---
+
+## 🔄 Session Logic
+
+Focus → Short Break → Focus → Short Break → Focus → Short Break → Focus → Long Break
+
+After each focus session:
+
+- Growth stage increases  
+- Visual feedback animates  
+- Completed session count updates  
+
+---
+
+## 🎯 Why I Built This
+
+I wanted to explore how **frontend logic can shape user behavior**, not just display data.
+
+This project reflects an interest in:
+
+- Human-centered UI decisions  
+- State-driven interaction design  
+- Building small but meaningful product experiences  
+
+---
+
+## 🚀 Getting Started
+
+```bash
+npm install
+npm run dev
