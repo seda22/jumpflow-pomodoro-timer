@@ -1,5 +1,8 @@
 # 🌱 Focus Garden Timer
 
+🔗 **Live Demo:** https://jumpflow-pomodoro-timer-jzte.vercel.app  
+🔗 **GitHub:** https://github.com/seda22/jumpflow-pomodoro-timer
+
 A minimalist productivity timer built with **React** that visualizes focus sessions as a growing digital garden.
 
 This project combines **time-boxing (Pomodoro logic)** with a small visual reward system to encourage consistency and sustained attention.
